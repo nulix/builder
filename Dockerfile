@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # install build tools
-RUN apk add --no-cache git openssh py3-pip docker yq ostree
+RUN apk add --no-cache git openssh curl py3-pip docker yq ostree
 
 # install west
 RUN python3 -m venv nulix-os-venv && \
